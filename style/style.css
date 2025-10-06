@@ -110,7 +110,43 @@ main>section{
     font-size: 1rem;
     
 }
+/* features style */
 
+#section-f-title{
+    max-width: 468px;
+    border-left: 4px solid rgba(255, 144, 14, 1);
+    padding-left:20px ;
+}
+.feature-card{
+    padding: 30px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.feature-card .feature-title{
+    font-weight:600 ;
+    font-size: 1.2rem;
+    
+}
+.featuress {
+ gap: 100px;
+}
+
+#Experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+#exprince-badges{
+    background-color: rgba(255, 144, 14, 1) ;
+    border: none;
+    border-radius: 8px;
+    padding: 45px 42px;
+    color: rgba(255, 255, 255, 1);
+    margin-left: -100px;
+    margin-top: -100px;
+    
+}
 
 /* some fact */
 .fact-container{
@@ -124,19 +160,58 @@ grid-template-columns: repeat(4,1fr);
     width: 241px;
     height: 241px;
     text-align: center;
-align-items: center;
-justify-content: center;
+    align-items: center;
+    justify-content: center;
 
 }
+.fact-number{
+    font-size: 2.81rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.fact-name{
+    font-weight: 600;
+    font-size: 1.25rem;
+    
+    
+}
+.fact-description{
+    max-width: 542px;
+    font-weight:400;
+    margin-bottom: 100px;
+}
+/* sponsor style */
+.sponsor-box{
+    max-width: 542px;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsor-img{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.sponsor-img img{
+filter: grayscale(100%);
 
+}
 /* responsive media quary */
 @media screen and (max-width: 576px ){
     .navbar,.nav-links,.teams{
         flex-direction: column;
     }
-    .team-img-container{
+    .team-img-container,.fact-container,.featuress{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+    }
+    .sponsor-img{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        justify-items: center;
+    }
+    .fact-container{
+        justify-items: center;
+        gap: 24px;
     }
     header,main{
         padding: 0;
