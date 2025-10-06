@@ -111,6 +111,24 @@ main>section{
     
 }
 
+
+/* some fact */
+.fact-container{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+
+}
+.fact{
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    width: 241px;
+    height: 241px;
+    text-align: center;
+align-items: center;
+justify-content: center;
+
+}
+
 /* responsive media quary */
 @media screen and (max-width: 576px ){
     .navbar,.nav-links,.teams{
